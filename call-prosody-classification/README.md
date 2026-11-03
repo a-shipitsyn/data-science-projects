@@ -3,6 +3,8 @@
 Predict whether a sales phone call ends in a purchase from how the two
 speakers sound: pitch, loudness, formants, speech rate and laughter.
 
+*Independent prototype, not the client system. It runs on simulated data, so its scores are not comparable with results on real calls.*
+
 ## Task
 
 Each sample is a two-channel phone-call recording (one speaker per channel)

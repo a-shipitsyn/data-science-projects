@@ -5,6 +5,8 @@ customers' questions in Telegram with retrieval-augmented generation over produc
 manuals. Claude writes the answers, OpenAI embeddings power the search, and
 PostgreSQL with pgvector stores both the document vectors and the conversations.
 
+*Independent prototype, not the client system.*
+
 ## Task
 
 Build a chatbot that cuts the load on a technical-support team:

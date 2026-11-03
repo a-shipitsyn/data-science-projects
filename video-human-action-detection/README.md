@@ -3,6 +3,8 @@
 Find people in a video and recognise what they are doing, using pretrained
 deep-learning models.
 
+*Independent prototype, not the client system.*
+
 ## Task
 
 Given a video file or a live video stream:
