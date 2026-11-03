@@ -1,5 +1,7 @@
 # Data science projects
 
+[![tests](https://github.com/a-shipitsyn/data-science-projects/actions/workflows/tests.yml/badge.svg)](https://github.com/a-shipitsyn/data-science-projects/actions/workflows/tests.yml)
+
 Twelve self-contained data science and machine learning projects in Python: credit risk,
 marketing econometrics, recommender systems, NLP and LLM systems, computer vision, audio,
 bioinformatics and trading. Each folder has its own README with the task, method, results
