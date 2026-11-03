@@ -1,0 +1,11 @@
+cryptography
+fastapi
+httpx
+joblib
+numpy
+optuna
+pandas
+pydantic
+pytest
+scikit-learn
+uvicorn

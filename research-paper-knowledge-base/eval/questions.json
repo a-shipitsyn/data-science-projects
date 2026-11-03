@@ -1,0 +1,116 @@
+{
+  "description": "Labelled questions for evaluating the knowledge base. Each item has the question in the papers' own vocabulary and a `paraphrase`: the same question in a user's words, which is the harder case for keyword search. `topic` names the ingested topic the question belongs to, so scores can be broken down per topic. Reference answers state only facts found in the listed relevant papers, which are public arXiv papers; build the knowledge base with the ingest commands in the README first.",
+  "questions": [
+    {
+      "question": "How well do deep learning models forecast limit order book mid-price moves, and do good forecasts mean profitable trading?",
+      "paraphrase": "If a model guesses the next tick well, can I actually make money from it?",
+      "topic": "limit order book",
+      "reference_answer": "Deep learning models have high forecasting power for high-frequency mid-price changes, but their efficacy depends on the microstructural characteristics of the individual stock, and high forecasting power does not necessarily correspond to actionable trading signals. Traditional machine learning metrics fail to assess forecast quality adequately in this context, so an operational framework that evaluates the practicality of predictions is proposed instead. The LOBFrame open-source code base was released to process large-scale limit order book data and compare models.",
+      "relevant_papers": [
+        "arxiv:2403.09267"
+      ]
+    },
+    {
+      "question": "What neural network architecture exploits the spatial structure of the order book, and what does it beat?",
+      "paraphrase": "Does it help to look deeper than the best price level when predicting prices?",
+      "topic": "limit order book",
+      "reference_answer": "A spatial neural network models distributions on R^d and is designed for the spatial structure of limit order books, giving a low-dimensional model of price movements deep into the book so that information from levels beyond the best bid and ask is used effectively. It models the joint distribution of the future state of the book conditional on the current state, and outperforms the naive empirical model, logistic regression with nonlinear features and a standard neural network architecture; both neural networks strongly outperform logistic regression.",
+      "relevant_papers": [
+        "arxiv:1601.01987"
+      ]
+    },
+    {
+      "question": "How does quote imbalance at the top of the order book relate to price moves and trade arrivals?",
+      "paraphrase": "If there are many more buyers than sellers waiting, what happens to the price next?",
+      "topic": "limit order book",
+      "reference_answer": "The probability of price movements and of trade arrivals is studied as a function of the quote imbalance at the top of the limit order book, together with the dynamics of the bid and ask queues and the intensity of trade arrivals. A stochastic model captures the joint dynamics of the top-of-book queues and the trading process, with a semi-analytic approach for the relative probability of market events, and it is calibrated on historical market data.",
+      "relevant_papers": [
+        "arxiv:1312.0514"
+      ]
+    },
+    {
+      "question": "Can general time-series foundation models forecast realized volatility without being adapted to financial data?",
+      "paraphrase": "Can I just use a general forecasting model off the shelf for predicting how much prices swing?",
+      "topic": "volatility forecasting",
+      "reference_answer": "The pretrained zero-shot TimesFM model gives only a reasonable baseline: incremental fine-tuning that lets the model adapt to new financial return data over time is essential for learning volatility patterns effectively, and the fine-tuned variants are compared against standard econometric benchmarks. Separately, TimeMixer, which mixes multiple scales to capture short- and long-term patterns, performs very well for short-term volatility but loses accuracy for longer horizons, especially in highly volatile markets.",
+      "relevant_papers": [
+        "arxiv:2505.11163",
+        "arxiv:2410.09062"
+      ]
+    },
+    {
+      "question": "Why is conformal prediction useful for black-box models, and what guarantee does it give?",
+      "paraphrase": "How do I put honest error bars on predictions from a model I cannot look inside?",
+      "topic": "conformal prediction",
+      "reference_answer": "Conformal prediction creates statistically rigorous uncertainty sets or intervals for the predictions of black-box models used in high-risk settings. The sets are valid in a distribution-free sense, with explicit non-asymptotic guarantees and no distributional or model assumptions, and can be applied to any pre-trained model such as a neural network to produce sets that contain the ground truth with a user-specified probability such as 90 percent. It is general and applies to computer vision, natural language processing and deep reinforcement learning.",
+      "relevant_papers": [
+        "arxiv:2107.07511"
+      ]
+    },
+    {
+      "question": "How can distribution-free prediction intervals be built for time series, where data are not exchangeable?",
+      "paraphrase": "How do I get reliable prediction ranges when my data arrive over time and keep changing?",
+      "topic": "conformal prediction",
+      "reference_answer": "A general framework gives explicit bounds on the conditional and marginal coverage gaps of the estimated prediction intervals, which converge to zero asymptotically under additional assumptions, plus similar bounds on set differences between oracle and estimated intervals. The EnbPI algorithm wraps around ensemble predictors and is related to conformal prediction but does not require data exchangeability; it avoids data splitting and retraining, so it is computationally efficient and scales to producing intervals sequentially.",
+      "relevant_papers": [
+        "arxiv:2010.09107"
+      ]
+    },
+    {
+      "question": "Why is it hard to select a model for heterogeneous treatment effect estimation, and what is known about the optimality of doubly robust learning?",
+      "paraphrase": "How do I pick the best model for estimating who benefits from a policy, when I never see what would have happened otherwise?",
+      "topic": "treatment effect estimation",
+      "reference_answer": "Because counterfactual information is absent in practice, standard validation metrics cannot be used, which creates a model selection dilemma; rather than declaring a global winner, the success and failure modes of different selection criteria are investigated empirically and shown to interact in a complex way. For average treatment effect estimation, the structure-agnostic framework of statistical lower bounds, which assumes nothing about the nuisance functions beyond black-box estimators achieving some rate, is used to prove the statistical optimality of doubly robust learning.",
+      "relevant_papers": [
+        "arxiv:2302.02923",
+        "arxiv:2402.14264"
+      ]
+    },
+    {
+      "question": "How can market equilibria be computed when items arrive over time instead of all being known in advance?",
+      "paraphrase": "How do I set fair prices and hand out goods when buyers show up one at a time?",
+      "topic": "market equilibrium",
+      "reference_answer": "In an online Fisher market where buyers have linear additive utilities and items arrive sequentially and must be allocated and priced irrevocably, an online market equilibrium is defined as time-indexed allocations and prices that guarantee buyer optimality and market clearance in hindsight. The proposed PACE dynamics are simple, scalable and interpretable, and when items are drawn independently from an unknown, possibly continuous distribution, PACE converges to an online market equilibrium asymptotically.",
+      "relevant_papers": [
+        "arxiv:2103.12936"
+      ]
+    },
+    {
+      "question": "How can the Sinkhorn algorithm for regularized optimal transport be made to converge faster while staying provably convergent?",
+      "paraphrase": "How can I make the standard iterative matching algorithm converge faster without losing the guarantee?",
+      "topic": "optimal transport",
+      "reference_answer": "The iterative Bregman projections, or Sinkhorn-Knopp, algorithm is generalized and improved. Regularized nonlinear acceleration schemes give fast algorithms in practice but without ensured global convergence, so a second algorithm overrelaxes the Bregman projection operators for faster convergence and establishes global convergence by ensuring that a Lyapunov function decreases at each step. The overrelaxation parameter is chosen adaptively from that Lyapunov function, with a heuristic for a suitable asymptotic value.",
+      "relevant_papers": [
+        "arxiv:1711.01851"
+      ]
+    },
+    {
+      "question": "What problems are caused by retrieving irrelevant context in a RAG system, and how can a system decide whether to retrieve at all?",
+      "paraphrase": "What goes wrong when a chatbot looks things up that have nothing to do with the question?",
+      "topic": "retrieval augmented generation",
+      "reference_answer": "Retrieving irrelevant information has a significant detrimental effect on the quality of large language model outputs in open-domain question answering, because it impairs the model's ability to use its internal knowledge effectively, and this issue has received minimal attention compared with work on improving the accuracy of retrieved chunks. The Context Awareness Gate architecture dynamically adjusts the input prompt of the language model according to whether the user query needs retrieval.",
+      "relevant_papers": [
+        "arxiv:2411.16133"
+      ]
+    },
+    {
+      "question": "How do graph-based and agentic RAG methods improve multi-hop reasoning over plain retrieval?",
+      "paraphrase": "How can a lookup system answer questions that need several facts joined together?",
+      "topic": "retrieval augmented generation",
+      "reference_answer": "Conventional RAG struggles to capture complex relationships between pieces of knowledge, which limits reasoning that must combine several sources; GraphRAG models those relationships explicitly with a graph, but suffers from noise and incompleteness in the graph. GFM-RAG is a graph foundation model whose graph neural network reasons over the graph structure to capture query-knowledge relationships, with 8 million parameters. FAIR-RAG instead turns the pipeline into an iterative refinement cycle whose Structured Evidence Assessment module acts as an analytical gate, deconstructing the query into a checklist of required findings and auditing the aggregated evidence to find gaps, which earlier iterative and adaptive methods lack.",
+      "relevant_papers": [
+        "arxiv:2502.01113",
+        "arxiv:2510.22344"
+      ]
+    },
+    {
+      "question": "Which papers report an open-source release or code base, and what is in it?",
+      "paraphrase": "Which of these papers published their code?",
+      "topic": "limit order book",
+      "reference_answer": "LOBFrame is released as an open-source code base to process large-scale limit order book data efficiently and to assess the forecasting capabilities of state-of-the-art deep learning models quantitatively.",
+      "relevant_papers": [
+        "arxiv:2403.09267"
+      ]
+    }
+  ]
+}

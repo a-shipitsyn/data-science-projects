@@ -1,0 +1,8 @@
+imutils
+jupyter
+matplotlib
+numpy
+opencv-python
+pytorchvideo
+torch
+torchvision

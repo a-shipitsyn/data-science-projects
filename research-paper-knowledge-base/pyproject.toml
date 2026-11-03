@@ -1,0 +1,24 @@
+# Package metadata and the `kb` command only.
+# Dependencies stay in requirements.txt, which is the single list of packages.
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "research-paper-knowledge-base"
+version = "0.1.0"
+description = "Search papers by topic, build a local knowledge base, answer questions with citations"
+requires-python = ">=3.10"
+dynamic = ["dependencies"]
+
+[project.scripts]
+kb = "paper_kb.cli:main"
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 120

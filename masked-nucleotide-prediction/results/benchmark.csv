@@ -1,0 +1,14 @@
+step,method,seconds,full_data_seconds,extrapolated,bases,threads,compile_seconds,peak_mb
+read FASTA,Python,3.39,3.39,,,,,
+encode,Python loop,,7.89,True,,,,
+encode,numpy lookup table,0.52,0.52,,,,,
+dense k=5,Python loop,5.13,227.01,True,2000000.00,1.00,0.00,326.53
+dense k=5,numpy,19.96,19.96,False,88552633.00,1.00,0.00,1392.66
+dense k=5,numba,11.64,11.64,False,88552633.00,1.00,0.36,233.74
+dense k=5,numba parallel,2.09,2.09,False,88552633.00,8.00,0.48,346.66
+dense k=1-5,"numba, one pass",36.83,36.83,False,88552633.00,1.00,0.97,226.73
+dense k=1-5,"numba parallel, one pass",2.34,2.34,False,88552633.00,8.00,0.42,356.26
+sparse k=10,Python loop + dict,15.30,677.38,True,2000000.00,1.00,0.00,596.07
+sparse k=10,numpy + np.unique,52.55,52.55,False,88552633.00,1.00,0.00,4342.61
+sparse k=10,numba + np.unique,18.32,18.32,False,88552633.00,1.00,0.39,3014.13
+sparse k=10,numba parallel + bucket sort,5.14,5.14,False,88552633.00,8.00,0.50,3454.80

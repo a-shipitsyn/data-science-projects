@@ -1,0 +1,72 @@
+{
+  "seed": 7,
+  "regional_premium": 0.35,
+  "alloy_premium": {
+    "6060": 0.0,
+    "6063": 0.05,
+    "6005A": 0.12,
+    "6082": 0.25
+  },
+  "complexity": {
+    "perimeter_per_area_ref": 0.3,
+    "perimeter_per_area_exp": 0.3,
+    "per_hollow": 0.12,
+    "thin_wall_below_mm": 2.5,
+    "thin_wall_per_mm": 0.25,
+    "large_ccd_above_mm": 120,
+    "large_ccd_per_mm": 0.003,
+    "per_unit_concavity": 0.2
+  },
+  "tolerance": {
+    "linear_per_halving": 0.12,
+    "gdt_per_halving": 0.06
+  },
+  "finish_usd_per_m2": {
+    "mill": 0.0,
+    "brushed": 2.5,
+    "anodised": 6.0,
+    "powder_coated": 8.0
+  },
+  "setup_usd": 300,
+  "new_die_usd": 700,
+  "new_die_per_hollow_usd": 500,
+  "rush": {
+    "below_days": 21,
+    "per_16_days": 0.12
+  },
+  "segment_factor": {
+    "oem": 1.0,
+    "distributor": 0.94,
+    "construction": 0.97
+  },
+  "customer_discount_log_sd": 0.07,
+  "noise_log_sd": 0.035,
+  "outlier_share": 0.015,
+  "tenants": {
+    "tenant_a": {
+      "schema_version": 1,
+      "n_quotes": 900,
+      "n_customers": 120,
+      "start": "2023-01-02",
+      "end": "2025-06-30",
+      "conversion_base": 1.5,
+      "margin": 1.1
+    },
+    "tenant_b": {
+      "schema_version": 2,
+      "n_quotes": 600,
+      "n_customers": 70,
+      "start": "2023-07-03",
+      "end": "2025-06-30",
+      "conversion_base": 1.35,
+      "margin": 1.22
+    }
+  },
+  "feedback": {
+    "tenant": "tenant_a",
+    "n_quotes": 200,
+    "start": "2025-07-01",
+    "end": "2025-10-31",
+    "conversion_base_factor": 1.25
+  }
+}

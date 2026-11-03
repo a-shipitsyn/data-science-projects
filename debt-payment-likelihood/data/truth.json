@@ -1,0 +1,24 @@
+{
+  "snapshot": "earlier",
+  "n": 8000,
+  "seed": 0,
+  "base_logit": -3.8,
+  "weights": {
+    "willingness": 1.2,
+    "income": 0.5,
+    "unemployed": -0.7,
+    "debt_burden": -0.6,
+    "case_age": -0.15,
+    "age": -0.12
+  },
+  "payment_rate": {
+    "3m": 0.0486,
+    "6m": 0.0835,
+    "12m": 0.1498
+  },
+  "true_proba_roc_auc": {
+    "3m": 0.836,
+    "6m": 0.84,
+    "12m": 0.84
+  }
+}

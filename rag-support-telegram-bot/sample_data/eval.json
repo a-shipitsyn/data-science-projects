@@ -1,0 +1,16 @@
+[
+  {"question": "Which power unit can I use for the DX-10?", "expected_file": "door-station-dx10.md"},
+  {"question": "How far can the outdoor panel be from the monitor?", "expected_file": "door-station-dx10.md"},
+  {"question": "The lock opens for too short a time, how do I make it longer?", "expected_file": "door-station-dx10.md"},
+  {"question": "At what height should the call panel be installed?", "expected_file": "door-station-dx10.md"},
+  {"question": "Can the station read proximity cards?", "expected_file": "door-station-dx10.md"},
+  {"question": "My screen settings are wrong, how do I go back to factory defaults?", "expected_file": "indoor-monitor-m7.md"},
+  {"question": "Does the indoor unit save pictures of people who rang?", "expected_file": "indoor-monitor-m7.md"},
+  {"question": "How can I make the doorbell quieter at night?", "expected_file": "indoor-monitor-m7.md"},
+  {"question": "How much electricity does the monitor use?", "expected_file": "indoor-monitor-m7.md"},
+  {"question": "How do I register a new tag for a tenant?", "expected_file": "access-controller-ac2.md"},
+  {"question": "What PIN opens the programming menu by default?", "expected_file": "access-controller-ac2.md"},
+  {"question": "How do I erase every card from memory?", "expected_file": "access-controller-ac2.md"},
+  {"question": "How many users does the controller support?", "expected_file": "access-controller-ac2.md"},
+  {"question": "How do I change how long the relay stays open on the controller?", "expected_file": "access-controller-ac2.md"}
+]

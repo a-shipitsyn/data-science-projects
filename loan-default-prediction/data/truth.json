@@ -1,0 +1,39 @@
+{
+  "seed": 0,
+  "n": 40000,
+  "start": "2024-01-01",
+  "months": 18,
+  "intercept": -3.4269,
+  "coefficients": {
+    "reliability": -0.7,
+    "log1p_failed_6m": 0.8,
+    "log1p_debt_to_repaid": 0.5,
+    "log1p_history_days": -0.22,
+    "new_credit_to_amount_14d": 0.4,
+    "card_expires_before_due": 1.2,
+    "log_amount": 0.2,
+    "month_index": 0.03
+  },
+  "group_effect": {
+    "electronics": 0.25,
+    "fashion": -0.1,
+    "home": -0.25,
+    "leisure": 0.1
+  },
+  "category_effect": {
+    "phones": 0.2,
+    "computers": -0.1,
+    "audio": 0.0,
+    "clothing": 0.1,
+    "shoes": -0.15,
+    "accessories": 0.2,
+    "furniture": -0.2,
+    "kitchen": 0.0,
+    "garden": 0.1,
+    "sports": -0.1,
+    "travel": 0.3,
+    "gaming": 0.25
+  },
+  "default_rate": 0.0801,
+  "mean_true_probability": 0.08
+}

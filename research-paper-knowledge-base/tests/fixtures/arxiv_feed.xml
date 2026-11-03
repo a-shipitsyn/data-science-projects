@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>arXiv Query</title>
+  <entry>
+    <id>http://arxiv.org/abs/2501.00001v2</id>
+    <published>2025-01-02T10:00:00Z</published>
+    <title>Hybrid retrieval
+      for technical search</title>
+    <summary>  We combine BM25 with dense embeddings
+      for retrieval. </summary>
+    <author><name>Ada Lovelace</name></author>
+    <author><name>Alan Turing</name></author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/0601001v1</id>
+    <published>2006-01-01T00:00:00Z</published>
+    <title>An old-style identifier</title>
+    <summary>Old paper.</summary>
+    <author><name>Grace Hopper</name></author>
+  </entry>
+</feed>

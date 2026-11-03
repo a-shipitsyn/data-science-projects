@@ -1,0 +1,58 @@
+{
+  "base": 25.0,
+  "trend_per_year": 2.0,
+  "season": 8.0,
+  "weekend": -9.0,
+  "holiday": -15.0,
+  "fx_shock": 150.0,
+  "media": {
+    "tv": {
+      "decay": 0.6,
+      "half_sat": 20000.0,
+      "shape": 2.0,
+      "coef_by_year": {
+        "2021": 30.0,
+        "2022": 24.0,
+        "2023": 18.0
+      }
+    },
+    "ooh": {
+      "decay": 0.3,
+      "half_sat": 2000.0,
+      "shape": 1.5,
+      "coef": 12.0
+    },
+    "digital": {
+      "decay": 0.15,
+      "half_sat": 900.0,
+      "shape": 1.2,
+      "coef": 10.0
+    }
+  },
+  "cpm": {
+    "tv": 4.0,
+    "ooh": 2.0,
+    "digital": 6.0
+  },
+  "dispersion": 50.0,
+  "true_contribution_share": {
+    "tv": 0.048,
+    "ooh": 0.0788,
+    "digital": 0.0948
+  },
+  "true_tv_calls_per_1000_contacts": {
+    "2021": 1.6779,
+    "2022": 1.384,
+    "2023": 0.9896
+  },
+  "true_roi_calls_per_1000": {
+    "tv": 0.3252,
+    "ooh": 1.8167,
+    "digital": 1.1515
+  },
+  "true_lift": [
+    270.4,
+    246.1,
+    171.9
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "source_dir": "../data/source",
+  "markdown_dir": "../data/markdown",
+  "prompt_dir": "../prompts",
+  "chunk_size": 512,
+  "chunk_overlap": 64,
+  "top_k": 8,
+  "similarity_threshold": 0.0,
+  "history_minutes": 30,
+  "max_questions_per_day": 30,
+  "llm_provider": "anthropic",
+  "llm_model": "claude-opus-5-5",
+  "max_tokens": 16000,
+  "embedding_provider": "openai",
+  "embedding_model": "text-embedding-3-small"
+}

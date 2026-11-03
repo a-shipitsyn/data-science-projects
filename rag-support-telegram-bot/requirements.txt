@@ -1,0 +1,12 @@
+anthropic
+llama-index-core
+llama-index-embeddings-openai
+llama-parse
+nest-asyncio
+numpy
+pgvector
+psycopg-pool
+psycopg[binary]
+pytest
+python-dotenv
+python-telegram-bot

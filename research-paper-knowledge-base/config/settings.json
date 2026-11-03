@@ -1,0 +1,25 @@
+{
+  "data_dir": "kb_data",
+  "sources": ["arxiv"],
+  "max_results_per_source": 10,
+
+  "chunk_size": 1000,
+  "chunk_overlap": 100,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+
+  "retrieval_k": 10,
+  "max_context_chars": 16000,
+  "min_sub_questions": 2,
+  "max_sub_questions": 5,
+
+  "ollama_model": "llama3.2",
+  "ollama_judge_model": "",
+  "ollama_judge_url": "",
+  "ollama_url": "http://localhost:11434",
+  "ollama_num_ctx": 8192,
+  "notes_max_chars": 20000,
+
+  "request_delay_arxiv": 3.0,
+  "http_timeout": 30,
+  "user_agent": "research-paper-knowledge-base/0.1 (mailto:<your-email>)"
+}

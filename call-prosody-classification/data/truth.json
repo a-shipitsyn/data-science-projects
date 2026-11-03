@@ -1,0 +1,16 @@
+{
+  "n": 600,
+  "seed": 0,
+  "base_logit": -2.2,
+  "w_rapport": 2.0,
+  "effects": {
+    "speaker_b__end__pitch_mean": 0.1,
+    "speaker_b__end__voiced_share": 0.08,
+    "speaker_b__end__energy_mean": 0.3,
+    "speaker_a__end__pitch_std": 0.3,
+    "has_laughter": 1.2
+  },
+  "purchase_rate": 0.1783,
+  "true_proba_roc_auc": 0.829,
+  "true_proba_best_f1": 0.552
+}

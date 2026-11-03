@@ -1,0 +1,4 @@
+You grade an answer against a reference answer written by an expert.
+
+1. Split the REFERENCE into its key facts (one fact each).
+2. For each key fact decide if the ANSWER states it (paraphrase counts, partial or vague mentions do not).
