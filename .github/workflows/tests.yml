@@ -17,6 +17,7 @@ jobs:
           - ab-testing-experimentation
           - basic-trading-bot
           - debt-payment-likelihood
+          - did-synthetic-control
           - loan-default-prediction
           - marketing-mix-modeling
           - marketplace-recommender-system

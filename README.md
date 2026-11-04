@@ -2,7 +2,7 @@
 
 [![tests](https://github.com/a-shipitsyn/data-science-projects/actions/workflows/tests.yml/badge.svg)](https://github.com/a-shipitsyn/data-science-projects/actions/workflows/tests.yml)
 
-Thirteen self-contained data science and machine learning projects in Python: credit risk,
+Fourteen self-contained data science and machine learning projects in Python: credit risk,
 experimentation and causal inference, marketing econometrics, recommender systems, NLP and
 LLM systems, computer vision, audio, bioinformatics and trading. Each folder has its own
 README with the task, method, results and instructions, its own `requirements.txt`, and
@@ -29,6 +29,7 @@ Contact: Aleksey Shipitsyn, [LinkedIn](https://www.linkedin.com/in/aleksey-shipi
 | Project | What it does | Methods |
 |---|---|---|
 | [ab-testing-experimentation](ab-testing-experimentation/) | Plans, monitors and reads out an online A/B test, and finds which users the change helps or harms | power analysis, CUPED and regression adjustment, delta method, sample ratio mismatch check, group sequential tests (O'Brien-Fleming alpha spending), mSPRT, uplift modelling (EconML causal forest, DR- and X-learners), doubly robust segment effects, Qini curves |
+| [did-synthetic-control](did-synthetic-control/) | Measures the sales effect of a store launch that was not randomised: a pilot in selected stores, a staggered rollout and a single-region launch | difference-in-differences (2×2, doubly robust, TWFE, event study), Hotelling pre-trend test, Callaway-Sant'Anna, imputation estimator, TWFE negative-weight diagnostic; synthetic control, augmented synthetic control, synthetic DiD, placebo inference |
 | [marketing-mix-modeling](marketing-mix-modeling/) | How TV, outdoor and digital advertising drive daily calls, and how to reallocate the budget | adstock and saturation transforms, regression with assumption tests, time-varying TV effect, Bayesian MMM (PyMC) calibrated with lift tests, budget optimisation |
 | [marketplace-recommender-system](marketplace-recommender-system/) | Ranks commercial property listings for businesses on a two-sided rental marketplace | popularity, item-KNN, EASE, implicit ALS, BPR, LightGCN, SASRec, two-tower; two-stage retrieval + LightGBM LambdaRank; time-based split, cold-start segments, oracle comparison |
 
