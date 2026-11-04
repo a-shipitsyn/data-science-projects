@@ -1,0 +1,4 @@
+planned for,n total,analytic power,"simulated power, difference in means","simulated power, CUPED","simulated power, regression adjustment"
+difference in means,246058,0.8,0.8,0.8633333333333333,0.9
+CUPED,205298,0.8,0.6933333333333334,0.7666666666666667,0.8166666666666667
+regression adjustment,191032,0.8,0.6666666666666666,0.7566666666666667,0.8033333333333333

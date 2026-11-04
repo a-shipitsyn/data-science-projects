@@ -1,0 +1,7 @@
+metric,method,relative MDE at 200k users
+revenue,difference in means,0.05157527290052777
+revenue,CUPED,0.04711025025680287
+revenue,regression adjustment,0.04544397233813876
+converted,difference in means,0.03910316607104663
+converted,CUPED,0.037028239020987584
+converted,regression adjustment,0.03449017809346351

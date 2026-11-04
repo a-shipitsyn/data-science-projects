@@ -1,0 +1,14 @@
+{
+  "oracle gain per user vs treat all": 1.8100168306904583,
+  "ate test half": 2.4838867486192133,
+  "causal forest feature importance": {
+    "pre_revenue": 0.392,
+    "pre_sessions": 0.323,
+    "desktop": 0.046,
+    "new_user": 0.0,
+    "tenure_years": 0.222,
+    "country_NO": 0.011,
+    "country_DK": 0.004,
+    "country_FI": 0.001
+  }
+}

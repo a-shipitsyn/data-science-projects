@@ -1,0 +1,56 @@
+{
+  "params": {
+    "intercept": -2.3,
+    "desktop": 0.25,
+    "tenure_1y": 0.3,
+    "new_user": -0.4,
+    "activity_shape": 0.3,
+    "aov_log_mean": 6.0,
+    "aov_log_sd": 0.45,
+    "revenue_noise_sd": 0.3,
+    "effect": {
+      "mobile": 0.1,
+      "new_user": 0.12,
+      "desktop_tenure_2y": -0.35
+    },
+    "srm_bug_drop": 0.05
+  },
+  "n_users": 200000,
+  "seed": 11,
+  "srm_bug": false,
+  "sample_ate_revenue": 2.516893227779361,
+  "sample_ate_conversion": 0.0039227875176690566,
+  "sample_segment_revenue_effect": {
+    "desktop / 30d-2y": 0.0,
+    "desktop / >2y": -24.40214644501596,
+    "desktop / new": 5.069403180751987,
+    "mobile / 30d-2y": 5.626374985269002,
+    "mobile / >2y": 6.802458711198966,
+    "mobile / new": 7.769641707727084
+  },
+  "population": {
+    "ate_revenue": 2.54987432024957,
+    "ate_conversion": 0.003937187849489546,
+    "control_revenue_mean": 55.21642899035938,
+    "control_conversion_mean": 0.09307829721141082,
+    "sessions_mean": 6.493013516457356,
+    "segment_share": {
+      "desktop / 30d-2y": 0.2262115,
+      "desktop / >2y": 0.073758,
+      "desktop / new": 0.1001335,
+      "mobile / 30d-2y": 0.338817,
+      "mobile / >2y": 0.110815,
+      "mobile / new": 0.150265
+    },
+    "segment_revenue_effect": {
+      "desktop / 30d-2y": 0.0,
+      "desktop / >2y": -23.98303631220564,
+      "desktop / new": 5.1886232222726525,
+      "mobile / 30d-2y": 5.585490943063939,
+      "mobile / >2y": 6.67898766561467,
+      "mobile / new": 7.764075507381031
+    }
+  },
+  "ate_revenue_relative": 0.04617963107854675,
+  "ate_conversion_relative": 0.04229974083589994
+}

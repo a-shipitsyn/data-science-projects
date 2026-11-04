@@ -1,0 +1,11 @@
+metric,relative MDE,"n total, difference in means","n total, CUPED","n total, regression adjustment"
+revenue,0.02,1330005,1109688,1032578
+revenue,0.03,591114,493195,458924
+revenue,0.05,212801,177551,165213
+revenue,0.07,108572,90587,84293
+revenue,0.1,53201,44388,41304
+converted,0.02,764529,685546,594787
+converted,0.03,339791,304687,264350
+converted,0.05,122325,109688,95166
+converted,0.07,62411,55963,48554
+converted,0.1,30582,27422,23792

@@ -1,0 +1,9 @@
+estimator,method,false positive rate (A/A),power (A/B),mean stopping day when significant,expected days run (A/B)
+difference in means,"fixed horizon, day 14",0.046,0.687,14.0,14.0
+difference in means,"naive peeking, daily",0.209,0.795,6.00125786163522,7.641
+difference in means,"group sequential (O'Brien-Fleming), daily",0.052,0.668,10.158682634730539,11.434
+difference in means,"mSPRT, daily",0.006,0.341,9.249266862170089,12.38
+CUPED,"fixed horizon, day 14",0.052,0.75,14.0,14.0
+CUPED,"naive peeking, daily",0.213,0.848,5.571933962264151,6.853
+CUPED,"group sequential (O'Brien-Fleming), daily",0.046,0.73,9.871232876712329,10.986
+CUPED,"mSPRT, daily",0.005,0.441,8.988662131519275,11.79
